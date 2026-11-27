@@ -1,0 +1,67 @@
+{
+  "Artist": [
+    { "name": "Claude Monet", "country": "France", "sex": "M", "birthdata": "1840-11-14", "age": 86, "style": "Impressionism", "century": "19th" },
+    { "name": "Auguste Rodin", "country": "France", "sex": "M", "birthdata": "1840-11-12", "age": 86, "style": "Realism", "century": "19th" },
+    { "name": "Mahmoud Said", "country": "Egypt", "sex": "M", "birthdata": "1897-04-08", "age": 129, "style": "Modernism", "century": "20th" },
+    { "name": "Frida Kahlo", "country": "Mexico", "sex": "F", "birthdata": "1907-07-06", "age": 119, "style": "Surrealism", "century": "20th" },
+    { "name": "Michelangelo", "country": "Italy", "sex": "M", "birthdata": "1475-03-06", "age": 551, "style": "Renaissance", "century": "16th" }
+  ],
+  "Art_object": [
+    { "id": 1, "price": 2400000, "Artist_name": "Claude Monet", "Visitor_ssn": 9001, "idseller": 1 },
+    { "id": 2, "price": 3100000, "Artist_name": "Auguste Rodin", "Visitor_ssn": 9002, "idseller": 1 },
+    { "id": 3, "price": 1800000, "Artist_name": "Auguste Rodin", "Visitor_ssn": null, "idseller": null },
+    { "id": 4, "price": 650000, "Artist_name": "Mahmoud Said", "Visitor_ssn": 9001, "idseller": 2 },
+    { "id": 5, "price": 5200000, "Artist_name": "Michelangelo", "Visitor_ssn": null, "idseller": null },
+    { "id": 6, "price": 1500000, "Artist_name": "Frida Kahlo", "Visitor_ssn": 9003, "idseller": null },
+    { "id": 7, "price": 400000, "Artist_name": "Auguste Rodin", "Visitor_ssn": null, "idseller": null }
+  ],
+  "Painting": [
+    { "Art_object_id": 1, "Name": "Water Lilies" },
+    { "Art_object_id": 4, "Name": "Nile Dawn" },
+    { "Art_object_id": 6, "Name": "The Two Fridas" }
+  ],
+  "Statue": [
+    { "Art_object_id": 5, "height": 5.17, "weight": 5600, "Name": "David Study" }
+  ],
+  "Sculpture": [
+    { "Art_object_id": 2, "height": 1.8, "weight": 700, "Name": "The Thinker" },
+    { "Art_object_id": 3, "height": 1.8, "weight": 450, "Name": "The Kiss" }
+  ],
+  "Employee": [
+    { "ssn": 101, "fname": "Omar", "Lname": "Khaled", "sex": "M", "Bdate": "1985-02-11", "address": "Cairo", "phone_no": "01000000001", "salary": 22000 },
+    { "ssn": 102, "fname": "Salma", "Lname": "Adel", "sex": "F", "Bdate": "1992-06-30", "address": "Giza", "phone_no": "01000000002", "salary": 12000 },
+    { "ssn": 103, "fname": "Youssef", "Lname": "Nabil", "sex": "M", "Bdate": "1990-09-01", "address": "Cairo", "phone_no": "01000000003", "salary": 15000 },
+    { "ssn": 104, "fname": "Nour", "Lname": "Hassan", "sex": "F", "Bdate": "1995-12-20", "address": "Badr", "phone_no": "01000000004", "salary": 11000 },
+    { "ssn": 105, "fname": "Ali", "Lname": "Mostafa", "sex": "M", "Bdate": "1988-03-14", "address": "Cairo", "phone_no": "01000000005", "salary": 14500 },
+    { "ssn": 106, "fname": "Dina", "Lname": "Fawzy", "sex": "F", "Bdate": "1994-07-07", "address": "Cairo", "phone_no": "01000000006", "salary": 9000 }
+  ],
+  "Manager": [
+    { "idManager": 1, "Employee_ssn": 101 }
+  ],
+  "Security": [
+    { "idSecurity": 1, "Employee_ssn": 102 }
+  ],
+  "seller": [
+    { "idseller": 1, "Employee_ssn": 103 },
+    { "idseller": 2, "Employee_ssn": 105 }
+  ],
+  "Tour_guide": [
+    { "idTour_guide": 1, "Employee_ssn": 104 }
+  ],
+  "Visitor": [
+    { "ssn": 9001, "fname": "Mona", "Lname": "Ali", "idguide": 1 },
+    { "ssn": 9002, "fname": "Karim", "Lname": "Hany", "idguide": 1 },
+    { "ssn": 9003, "fname": "Laila", "Lname": "Samir", "idguide": 1 }
+  ],
+  "Museum": [
+    { "name": "Louvre", "country": "France" },
+    { "name": "Egyptian Museum", "country": "Egypt" },
+    { "name": "MoMA", "country": "USA" }
+  ],
+  "Borrowe_from": [
+    { "Museum_name": "Louvre", "Art_object_id": 5, "borrowDate": "2026-01-15", "returnDate": "2026-04-20" },
+    { "Museum_name": "Louvre", "Art_object_id": 1, "borrowDate": "2026-03-01", "returnDate": "2026-06-01" },
+    { "Museum_name": "MoMA", "Art_object_id": 2, "borrowDate": "2026-09-10", "returnDate": null },
+    { "Museum_name": "Egyptian Museum", "Art_object_id": 4, "borrowDate": "2026-10-01", "returnDate": null }
+  ]
+}
